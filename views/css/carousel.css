@@ -1,0 +1,27 @@
+/*Carousel*/
+
+#featured_items,#my_bids_container,#my_items_container{
+    background-color: #e6e6e6e0;
+    border-radius: 5px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-size: 60%;
+    background-color: rgb(90, 90, 90);
+    border-radius: 5px;
+}
+
+.carousel-control-next,
+.carousel-control-prev{
+    width: 5%;
+}
+
+.carousel {
+    width: 100%;
+}
+
+#carouselitem{
+    display: inline-flex;
+    justify-content: center;
+}

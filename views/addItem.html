@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>bmazon-addItem</title>
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script src="/mvc/controllers/addItem_page.js"></script>
+    <script src="/mvc/models/addItem_page.js"></script>
+    <script src="/mvc/views/addItem_page.js"></script>
+    <script src="/mvc/eventDispatcher.js"></script>
+    <script src="/mvc/init/addItem.js"></script>
+    <link href="/views/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+    <script
+        src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css">
+</head>
+
+<body>
+    <div class="addItem_container">
+        <div class="inner_addItem_container">
+            <div class="title">
+                <h1>Add Item</h1>
+            </div>
+            <div class="addItem_inputs">
+                <div class="addItems_input_outer" id="basicAnchor">
+                    <div class="addItem_inputs_inner_container">
+                        <p style="margin-bottom: 10px">Display Image</p>
+                        <div class="add_image fas fa-plus"></div>
+                        <img class="added_image" src="#">
+                        <input type="file" class="addItem_display_image" accept="image/*" name="image">
+                        <input type="button" class="clear_image" value="clear">
+                    </div>
+                    <div class="addItems_basic_text">
+                        <div class="addItem_inputs_inner_container">
+                            <p>Name</p>
+                            <input type="text" class="addItem_name" name="name">
+                        </div>
+                        <div class="addItem_inputs_inner_container">
+                            <p>Starting Bidding Price</p>
+                            <div class="first_bidding_price">
+                                <input onkeypress="return isNumber(event)" type="text" class="addItem_fisrt_bid" name="fisrt_bid"
+                                    style="width: 100px; text-align: center">
+                                <i class="fas fa-euro-sign"></i>
+                            </div>
+                            <p>Sell Price</p>
+                            <div class="sell_price">
+                                <input onkeypress="return isNumber(event)" type="text" class="addItem_sell_price" name="sell_price"
+                                    style="width: 100px; text-align: center">
+                                <i class="fas fa-euro-sign"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="addItems_input_outer">
+                    <div class="addItem_inputs_inner_container">
+                        <input type="button" class="general_button addItem_categories_button" value="Categories">
+                        <div class="form_categories_container"></div>
+                    </div>
+                    <div class="addItem_inputs_inner_container">
+                        <div class="calendar_start_end">
+                            <label for="date_start" id="start" title="Start"><i
+                                    class="text_icon fas fa-calendar-alt"></i>Starts</label>
+                            <input id="date_start" class="datepick" type="date">
+                            <label for="date_end" id="end" title="End"><i
+                                    class="text_icon fas fa-calendar-alt"></i>Ends</i></label>
+                            <input id="date_end" class="datepick" type="date">
+                        </div>
+                    </div>
+                </div>
+                <div class="addItems_input_outer">
+                    <div class="description_cont addItem_inputs_inner_container">
+                        <p>Description</p>
+                        <textarea rows="5" cols="60" class="addItem_description" name="description"></textarea>
+                    </div>
+                </div>
+                <div class="addItems_input_outer">
+                    <div class="map_cont addItem_inputs_inner_container">
+                        <p>Location</p>
+                        <div id='mapid'></div>
+                    </div>
+                </div>
+                <div class="addItem_inputs_inner_container" style="width: 600px">
+                    <p style="text-align: center">Additional Images</p>
+                    <div class="additional_images_wrap_container">
+                        <div class="additional_images_container">
+                            <div class="additional_images fas fa-plus"></div>
+                            <img id="0" class="additional_image_added" src="#">
+                            <input type="file" class="additional_file_image" accept="image/*">
+                            <input type="button" class="clear_added_image" value="clear">
+                        </div>
+                    </div>
+                </div>
+                <div class="addItem_buttons_container">
+                    <input type="button" class="addItem_button" value="Add Item" name="addItem">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/mvc/header.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>User Management</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link href="../views/css/styles.css" rel="stylesheet">
+    </link>
+    <script src="../mvc/controllers/user_management_page.js"></script>
+    <script src="../mvc/models/user_management_page.js"></script>
+    <script src="../mvc/views/user_management_page.js"></script>
+    <script src="eventDispatcher.js"></script>
+    <script src="user_management.js"></script>
+</head>
+<body>
+    <div class="container" id="title">
+        <div class="row">
+            <div class="col-xl-12">
+                <h1 class="text-center">User Management</h1>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="inner_cont">
+            <div class="button_wrap">
+                <p class="s_title">Export Items</p>
+            </div>
+        </div>
+        <div class="inner_cont">
+            <div class="button_wrap">
+                <button class='s_button' id='json'>JSON</button>
+            </div>
+            <div class="button_wrap">
+                <button class='x_button' id='xml'>XML</button>
+            </div>
+        </div>
+    </div>
+    <script src="../mvc/header.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+/*Header*/
+
+.header{
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    display: block;
+    background-color: #353535;
+}
+
+.inner_header{
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container:hover{
+    cursor: pointer;
+}
+
+.logo_container>h1{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navigation{
+    height: 100%;
+    float: right;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all .3s linear;
+}
+
+.navigation a:hover li{
+    cursor: pointer;
+    color: #ff9900;
+}
+
+.header_message::after{
+    content: attr(text-content);
+    display: inline-block;
+    margin-left: 5px;
+    border: 2px #fff solid;
+    border-radius: 24px;
+    padding-right: 12px;
+    padding-left: 12px;
+    transition: all .3s linear;
+}
+
+.header_message:hover::after{
+    border: 2px #ff9900 solid;
+}
+
+.no_content::after{
+    content: none;
+}
+
+/*Animations*/
+
+@keyframes fade_in{
+    from{opacity: 0.5;}
+    to{opacity: 1;}
+}

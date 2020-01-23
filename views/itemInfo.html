@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>bmazon-itemInfo</title>
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script src="/mvc/controllers/itemInfo_page.js"></script>
+    <script src="/mvc/models/itemInfo_page.js"></script>
+    <script src="/mvc/views/itemInfo_page.js"></script>
+    <script src="/mvc/eventDispatcher.js"></script>
+    <script src="/mvc/init/itemInfo.js"></script>
+    <link href="/views/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+</head>
+
+<body>
+    <div class="itemInfo_container">
+        <div class="inner_itemInfo_container">
+            <div class="title">
+                <h1 id="name"></h1>
+            </div>
+            <div class="itemInfo_inputs">
+                <div class="itemInfos_input_outer" id="basicAnchor">
+                    <div class="itemInfo_inputs_inner_container">
+                        <img class="show_image" src="#">
+                    </div>
+                    <div class="itemInfos_basic_text">
+                        <div class="itemInfo_inputs_inner_container pricing">
+                            <p id="sbp">Highest Bid </p>
+                            <p id="sp">Sell Price </p>
+                        </div>
+                    </div>
+                    <div class="itemInfos_basic_text">
+                        <div class="itemInfo_inputs_inner_container bid">
+                            <p>Place a Bid </p>
+                            <input onkeypress="return isNumber(event)" type="text" class="add_bid"
+                                style="width: 100px; text-align: center">
+                            <button class="general_button submit_bid" value="Submit Bid" style="width: 205px;">Submit Bid</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfos_input_outer">
+                    <div class="description_cont itemInfo_inputs_inner_container">
+                        <p>Description</p>
+                        <p id="desc"></p>
+                    </div>
+                </div>
+                <div class="itemInfos_input_outer">
+                    <div class="itemInfo_inputs_inner_container">
+                        <div class="calendar_start_end_info">
+                            <label for="date_start" id="started" title="Started"><i
+                                    class="text_icon fas fa-calendar-alt"></i>Started</label>
+                            <label for="date_end" id="ends" title="Ends"><i
+                                    class="text_icon fas fa-calendar-alt"></i>Ends</i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfos_input_outer">
+                    <div class="map_cont itemInfo_inputs_inner_container">
+                        <p>Location</p>
+                        <div id='mapid'></div>
+                    </div>
+                </div>
+                <div class="itemInfo_inputs_inner_container" style="width: 600px">
+                    <p style="text-align: center">Additional Images</p>
+                    <div class="additional_images_wrap_container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/mvc/header.js"></script>
+</body>
+
+</html>

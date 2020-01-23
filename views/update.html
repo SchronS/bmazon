@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>bmazon</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="../mvc/controllers/update_page.js"></script>
+    <script src="../mvc/models/update_page.js"></script>
+    <script src="../mvc/views/update_page.js"></script>
+    <script src="../mvc/eventDispatcher.js"></script>
+    <script src="../mvc/init/update.js"></script>
+    <link href="../views/css/styles.css" rel="stylesheet">
+    </link>
+
+<body>
+    <div class="update_container">
+        <div class="inner_update_container">
+            <div class="title">
+                <h1>update</h1>
+            </div>
+            <div class="update_inputs">
+                <div class="update_inputs_inner_container">
+                    <p>Username:</p>
+                    <input type="text" class="update_username" id="username">
+                </div>
+                <div class="update_inputs_inner_container">
+                    <p>Password:</p>
+                    <input type="password" class="update_password" id="password">
+                </div>
+                <div class="update_inputs_inner_container">
+                    <p>Name:</p>
+                    <input type="text" class="update_name" id="name">
+                </div>
+                <div class="update_inputs_inner_container">
+                    <p>Lastname:</p>
+                    <input type="text" class="update_lastname" id="lastname">
+                </div>
+                <div class="update_inputs_inner_container">
+                    <p>Email:</p>
+                    <input type="text" class="update_email" id="mail">
+                </div>
+                <div class="update_inputs_inner_container">
+                    <p>Phone:</p>
+                    <input type="text" class="update_phone" id="phone">
+                </div>
+                <div class="update_inputs_inner_container">
+                    <p>Address:</p>
+                    <input type="text" class="update_address" id="address">
+                </div>
+                <div class="update_inputs_inner_container">
+                    <p>Geolocation:</p>
+                    <input type="text" class="update_geolocation" id="geolocation">
+                </div>
+                <div class="update_inputs_inner_container">
+                    <p>AFM:</p>
+                    <input type="text" class="update_afm" id="afm">
+                </div>
+                <div class="update_inputs_inner_container">
+                    <p>Role:</p>
+                    <select class="update_role" id="role">
+                        <option value="seller">seller</option>
+                        <option value="bidder">bidder</option>
+                        <option value="guest" selected>visitor</option>
+                    </select>
+                </div>
+                <div class="update_inputs_inner_container">
+                    <p>Activated:</p>
+                    <a class="checkbox_wrapper" id="activated">
+                        <div class="fas fa-check checked_checkbox">
+                            <input type="checkbox" class="update_activated">
+                        </div>
+                    </a>
+                </div>
+                <div class="update_buttons_container">
+                    <input type="button" class="update_button" value="Update" name="update">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='back_container' style="margin-top: 10px">
+        <div class="back_inner_container">
+            <button class="return_button">back</button>
+        </div>
+    </div>
+    <script src="../mvc/header.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>bmazon-register</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="../mvc/controllers/register_page.js"></script>
+    <script src="../mvc/models/register_page.js"></script>
+    <script src="../mvc/views/register_page.js"></script>
+    <script src="eventDispatcher.js"></script>
+    <script src="register.js"></script>
+    <link href="../views/css/styles.css" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <div class="register_container">
+        <div class="inner_register_container">
+            <div class="title">
+                <h1>Register</h1>
+            </div>
+            <div class="register_inputs">
+                <div class="register_inputs_inner_container">
+                    <p>Username:</p>
+                    <input type="text" class="register_username" name="username">
+                </div>
+                <div class="register_inputs_inner_container">
+                    <p>Password:</p>
+                    <input type="password" class="register_password" name="password">
+                </div>
+                <div class="register_inputs_inner_container">
+                    <p>Re-password:</p>
+                    <input type="password" class="register_re_password" name="re-password">
+                </div>
+                <div class="register_inputs_inner_container">
+                    <p>Name:</p>
+                    <input type="text" class="register_name" name="name">
+                </div>
+                <div class="register_inputs_inner_container">
+                    <p>Lastname:</p>
+                    <input type="text" class="register_lastname" name="lastname">
+                </div>
+                <div class="register_inputs_inner_container">
+                    <p>Email:</p>
+                    <input type="text" class="register_email" name="email">
+                </div>
+                <div class="register_inputs_inner_container">
+                    <p>Phone:</p>
+                    <input type="text" class="register_phone" name="phone">
+                </div>
+                <div class="register_inputs_inner_container">
+                    <p>Address:</p>
+                    <input type="text" class="register_address" name="address">
+                </div>
+                <div class="register_inputs_inner_container">
+                    <p>Geolocation:</p>
+                    <input type="text" class="register_geolocation" name="geolocation">
+                </div>
+                <div class="register_inputs_inner_container">
+                    <p>AFM:</p>
+                    <input type="text" class="register_afm" name="afm">
+                </div>
+                <div class="register_inputs_inner_container">
+                    <p>Role:</p>
+                    <select class="register_role">
+                        <option value="seller">seller</option>
+                        <option value="bidder">bidder</option>
+                        <option value="client">visitor</option>
+                    </select>
+                </div>
+                <div class="register_buttons_container">
+                    <input type="button" class="register_button" value="register" name="register">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
