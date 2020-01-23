@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `tedi` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `tedi`;
+CREATE DATABASE  IF NOT EXISTS `bmazon` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `bmazon`;
 -- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: tedi
+-- Host: 127.0.0.1    Database: bmazon
 -- ------------------------------------------------------
 -- Server version	8.0.17
 
@@ -163,11 +163,11 @@ INSERT INTO `users` VALUES ('admin','nimda','admin','istrator','admin@this.com',
 UNLOCK TABLES;
 
 --
--- Dumping events for database 'tedi'
+-- Dumping events for database 'bmazon'
 --
 
 --
--- Dumping routines for database 'tedi'
+-- Dumping routines for database 'bmazon'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
