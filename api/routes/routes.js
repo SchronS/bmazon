@@ -1,6 +1,4 @@
 'use strict';
-var multer = require('multer');
-var upload = multer({dest:'/images'});
 module.exports = function(app) {
     //--------------------------------------------------User Routes--------------------------------------------------\\
     var user_controller = require('../controller/users');
