@@ -31,6 +31,7 @@ Installation
 
 > Type the following commands:
 >> npm install
+
 >> node server.js
 
 > Open your browser and type the following url:
