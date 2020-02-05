@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `bmazon` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `bmazon`;
+CREATE DATABASE  IF NOT EXISTS `tedi` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `tedi`;
 -- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: bmazon
+-- Host: 127.0.0.1    Database: tedi
 -- ------------------------------------------------------
 -- Server version	8.0.17
 
@@ -125,7 +125,7 @@ CREATE TABLE `messages` (
 
 LOCK TABLES `messages` WRITE;
 /*!40000 ALTER TABLE `messages` DISABLE KEYS */;
-INSERT INTO `messages` VALUES (1,'MoneyWaste','Stratis','This is a message',0),(3,'MoneyWaste','Stratis','This is a longer message',1),(4,'MoneyWaste','Stratis','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',1),(5,'Stratis','MoneyWaste','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',1),(6,'Stratis','MoneyWaste','Bmazon is great i would rate it 10/10 every time!',1),(8,'Stratis','MoneyWaste','Hey there,\nI\'m a message to test send functionality\nYours,\nStratis',1),(12,'MoneyWaste','Stratis','This is a message',0),(13,'MoneyWaste','Stratis','This is a message',0),(14,'MoneyWaste','Stratis','This is a diffrent message',0),(15,'User','Stratis','This is another message',0),(16,'MoneyWaste','Stratis','This is my final test message',0);
+INSERT INTO `messages` VALUES (1,'MoneyWaste','Stratis','This is a message',0),(3,'MoneyWaste','Stratis','This is a longer message',1),(4,'MoneyWaste','Stratis','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',1),(5,'Stratis','MoneyWaste','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',1),(6,'Stratis','MoneyWaste','tedi is great i would rate it 10/10 every time!',1),(8,'Stratis','MoneyWaste','Hey there,\nI\'m a message to test send functionality\nYours,\nStratis',1),(12,'MoneyWaste','Stratis','This is a message',0),(13,'MoneyWaste','Stratis','This is a message',0),(14,'MoneyWaste','Stratis','This is a diffrent message',0),(15,'User','Stratis','This is another message',0),(16,'MoneyWaste','Stratis','This is my final test message',0);
 /*!40000 ALTER TABLE `messages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -163,11 +163,11 @@ INSERT INTO `users` VALUES ('admin','nimda','admin','istrator','admin@this.com',
 UNLOCK TABLES;
 
 --
--- Dumping events for database 'bmazon'
+-- Dumping events for database 'tedi'
 --
 
 --
--- Dumping routines for database 'bmazon'
+-- Dumping routines for database 'tedi'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
