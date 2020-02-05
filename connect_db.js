@@ -4,7 +4,7 @@ var con = mysql.createConnection({
     host: "localhost",
     user: "root",//your username
     password: "toor",//your password
-    database : "bmazon",
+    database : "tedi",
     multipleStatements: true
 });
 
