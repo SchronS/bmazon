@@ -1,6 +1,7 @@
 # bmazon
 
-Bmazon is a auction site. It support placing items for auctioning as well as bidding on auctioned items.
+Bmazon is a auction site. It supports placing items for auctioning as well as bidding on auctioned items.
+In addition it supports a messaging system between users and finally an administrator panel accessed exclusively from the admin.
 
 Prerequisites
 
